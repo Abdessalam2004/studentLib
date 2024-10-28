@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="home.html"><img src="images/logo.png" alt="StudentLib_logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="pages/cours.html">Cours</a>
+                    <ul>
+                        <li>CP</li>
+                        <li>CI</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="pages/TD.html">TD</a>
+                    <ul>
+                        <li>CP</li>
+                        <li>CI</li>
+                    </ul>
+                </li>
+                <li><a href="pages/extra.html">Extra</a></li>
+                <li><a href="pages/signup.html">S'inscrire</a></li>
+                <li><a href="pages/login.html">Se connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="searchBar">
+        <form action="/api/getresults" method="post">
+            <input type="text" placeholder="Faire une recherche">
+            <input type="submit" value="Rechercher">
+        </form>
+    </div>
+    <br>
+    <footer>
+        <span><a href="mailto:test@gmail.com">Contact Us</a></span>
+        <br>
+        <span>©2025, Tous droits réservés.</span>
+    </footer>
+</body>
+</html>
