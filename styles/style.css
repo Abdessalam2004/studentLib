@@ -46,6 +46,7 @@ nav{
 }
 
 .option{
+    transition: background-color 0.3s ease;
     border: 1px solid black;
     width: 150px;
     height: 80px;
@@ -71,12 +72,13 @@ nav{
     position: absolute;
     width: 101%;
     top: 100%;
-    background-color: var(--Scolor);
+    background-color: var(--Pcolor);
     border: 1px solid black;
     z-index: 2;
 }
 
 .listCours a,.listTd a{
+    transition: background-color 0.3s ease;
     padding: 10px;
     margin: 5px 0;
 }
