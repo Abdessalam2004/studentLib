@@ -51,6 +51,12 @@ nav{
     height: 80px;
     position: relative;
     user-select: none;
+    background-color: var(--Mcolor);
+}
+
+.option :hover{
+    transition: background-color 0.3s ease;
+    background-color: var(--Pcolor);
 }
 
 .CoursSelector,.TdSelector{
@@ -58,7 +64,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--Mcolor);
 }
 
 .listCours,.listTd{
@@ -73,9 +78,7 @@ nav{
 
 .listCours a,.listTd a{
     padding: 10px;
-    background-color: var(--Scolor);
     margin: 5px 0;
-    transition: background-color 0.3s ease-out;
 }
 .option a{
     width: 100%;
@@ -87,6 +90,7 @@ nav{
     align-items: center;
     justify-content: center;
 }
+
 .listCours a:hover,.listTd a:hover{
     transition: background-color 0.3s ease-out;
     background-color: #AAA;
@@ -116,6 +120,7 @@ main{
     flex-direction: column;
     align-items: center;
     color: var(--Mcolor);
+    font-size: 1.3rem;
 }
 
 main section{
@@ -129,7 +134,6 @@ main fieldset{
     flex-direction: column;
     gap: 10px;
     border-radius: 10px;
-    font-size: 1.3rem;
 }
 
 main input,main select{

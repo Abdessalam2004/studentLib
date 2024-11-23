@@ -42,13 +42,13 @@
     </header>
     
     <main>
-        <form action="content.html" method="get">
+        <form id="loginForm">
             <fieldset>
                 <legend>Se connecter</legend>
                 Email
-                <input type="email" placeholder="exemple@gmail.com" required>
+                <input type="email" placeholder="exemple@gmail.com" name="Email" required id="email">
                 Mot de passe
-                <input type="password" placeholder="123456789" required>
+                <input type="password" placeholder="123456789" name="Password" required id="password">
                 <br>
                 <input class="submit" type="submit" value="Se connecter">
                 <hr>
@@ -56,6 +56,7 @@
                 <a href="./signup.html">Créer nouveau compte</a>
             </fieldset>
         </form>
+               
     </main>
     <footer>
         <span><a href="mailto:studentlib@gmail.com" style="color: white;">Contacter Nous</a></span>
@@ -63,5 +64,28 @@
         <span>©2025, Tous droits réservés.</span>
     </footer>
     <script src="../scripts/main.js"></script>
+    <script>
+        document.getElementById("loginForm").addEventListener('submit', (event)=> {
+            event.preventDefault();
+            location.href = 'extra.html';
+
+            const Email = document.getElementById("email").value;
+            const Password = document.getElementById("password").value;
+
+            let Users = localStorage.getItem("Users");
+            Users = Users ? JSON.parse(Users) : {};
+            if (Users[Email]) { 
+                if (Users[Email].Password === Password) {
+                    alert("Connexion réussie !");
+                    location.href = 'content.html'; 
+                } else {
+                    alert("Mot de passe incorrect !");
+                }
+            } else {
+                alert("Utilisateur Introuvable !");
+                location.reload();
+            }
+        });
+    </script>
 </body>
 </html>

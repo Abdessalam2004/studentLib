@@ -42,13 +42,13 @@
     </header>
     
     <main>
-        <form method="post" action="/">
+        <form id="singupForm">
             <fieldset>
                 <legend>S'inscrire</legend>
                 Nom
                 <input type="text" name="Nom" placeholder="Nom" required>
                 Prénom
-                <input type="text" name="Prenom" placeholder="Prénom">
+                <input type="text" name="Prénom" placeholder="Prénom">
                 <label for='select_year'>Niveau scolaire:</label>
                 <select name="select_year" >
                     <optgroup label="CP">
@@ -63,11 +63,11 @@
                     </optgroup>
                 </select>
                 Email
-                <input type="email" name="Email" placeholder="example@gmail.com" required>
+                <input type="email" name="Email" placeholder="exemple@gmail.com" required>
                 Mot de passe
-                <input type="password" name="motDePasse" placeholder="123456789" required>
+                <input type="password" name="Password" placeholder="123456789" required>
                 Confirmer le mot de passe
-                <input type="password" name="confirmMotDePasse" placeholder="123456789" required>
+                <input type="password" name="Confirm" placeholder="123456789" required>
                 <br>
                 <input type="submit" class="submit" name="submit_button" value="S'inscrire"/>
             </fieldset>
