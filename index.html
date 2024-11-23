@@ -1,49 +1,59 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>StudentLib</title>
+    <link rel="stylesheet" href="/styles/style.css"> <!-- Link your CSS file -->
 </head>
 <body>
     <header>
         <div id="logo">
-            <a href="index.html"><img src="images/logo.png" alt="StudentLib_logo"></a>
+            <a href="index.html">
+                <img src="images/logo.png" alt="StudentLib_logo">
+            </a>
         </div>
         <nav>
-            <ul>
-                <li>
-                    <a href="pages/cours.html">Cours</a>
-                    <ul>
-                        <li>CP</li>
-                        <li>CI</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="pages/TD.html">TD</a>
-                    <ul>
-                        <li>CP</li>
-                        <li>CI</li>
-                    </ul>
-                </li>
-                <li><a href="pages/extra.html">Extra</a></li>
-                <li><a href="pages/signup.html">S'inscrire</a></li>
-                <li><a href="pages/login.html">Se connecter</a></li>
-            </ul>
+            <!-- Cours Dropdown -->
+            <li class="option">
+                <div class="CoursSelector">Cours<img src="/images/down-arrow.png" width="20px" style="position: absolute;right: 5px;"></div>
+                <ul class="listCours">
+                    <li><a href="pages/cours.html">CP</a></li>
+                    <li><a href="pages/cours.html">CI</a></li>
+                </ul>
+            </li>
+
+            <!-- TD Dropdown -->
+            <li class="option">
+                <div class="TdSelector">TD<img src="/images/down-arrow.png" width="20px" style="position: absolute;right: 5px;"></div>
+                <ul class="listTd">
+                    <li><a href="pages/TD.html">CP</a></li>
+                    <li><a href="pages/TD.html">CI</a></li>
+                </ul>
+            </li>
+
+            <!-- Other Navigation Links -->
+            <li class="option"><a href="pages/extra.html">Extra</a></li>
+            <li class="option"><a href="pages/signup.html">S'inscrire</a></li>
+            <li class="option"><a href="pages/login.html">Se connecter</a></li>
+
         </nav>
     </header>
-    <br>
-    <div class="searchBar">
-        <form action="/api/getresults" method="post">
-            <input type="text" placeholder="Faire une recherche">
-            <input type="submit" value="Rechercher">
-        </form>
-    </div>
-    <br>
+
+    <!-- Placeholder Content -->
+    <main>
+        <div class="searchBar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div>Bienvenue sur StudentLib ! Sélectionnez une option dans le menu ci-dessus.</div>
+    </main>
+    <!-- Footer -->
     <footer>
-        <span><a href="mailto:test@gmail.com">Contact Us</a></span>
+        <span><a href="mailto:studentlib@gmail.com" style="color: white;">Contacter Nous</a></span>
         <br>
         <span>©2025, Tous droits réservés.</span>
     </footer>
+    <script src="/scripts/main.js"></script>
 </body>
 </html>

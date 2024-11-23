@@ -3,61 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Se connecter</title>
 </head>
 <body>
     <header>
         <div id="logo">
-            <a href="../index.html"><img src="../images/logo.png" alt="StudentLib_logo"></a>
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="StudentLib_logo">
+            </a>
         </div>
         <nav>
-            <ul>
-                <li>
-                    <a href="cours.html">Cours</a>
-                    <ul>
-                        <li>CP</li>
-                        <li>CI</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="TD.html">TD</a>
-                    <ul>
-                        <li>CP</li>
-                        <li>CI</li>
-                    </ul>
-                </li>
-                <li><a href="extra.html">Extra</a></li>
-                <li><a href="signup.html">S'inscrire</a></li>
-                <li><a href="login.html">Se connecter</a></li>
-            </ul>
+            <!-- Cours Dropdown -->
+            <li class="option">
+                <div class="CoursSelector">Cours<img src="../images/down-arrow.png" width="20px" style="position: absolute;right: 0;"></div>
+                <ul class="listCours">
+                    <li><a href="cours.html">CP</a></li>
+                    <li><a href="cours.html">CI</a></li>
+                </ul>
+            </li>
+
+            <!-- TD Dropdown -->
+            <li class="option">
+                <div class="TdSelector">TD<img src="../images/down-arrow.png" width="20px" style="position: absolute;right: 0;"></div>
+                <ul class="listTd">
+                    <li><a href="TD.html">CP</a></li>
+                    <li><a href="TD.html">CI</a></li>
+                </ul>
+            </li>
+
+            <!-- Other Navigation Links -->
+            <li class="option"><a href="extra.html">Extra</a></li>
+            <li class="option"><a href="signup.html">S'inscrire</a></li>
+            <li class="option"><a href="login.html">Se connecter</a></li>
+
         </nav>
     </header>
     
-    <div class="loginSection">
-        <br>
+    <main>
         <form action="content.html" method="get">
             <fieldset>
                 <legend>Se connecter</legend>
-                <input type="email" id="" placeholder="Adresse e-mail ou numéro de tél" required>
+                Email
+                <input type="email" placeholder="exemple@gmail.com" required>
+                Mot de passe
+                <input type="password" placeholder="123456789" required>
                 <br>
-                <br>
-                <input type="password" id="" placeholder="Mot de passe" required>
-                <br>
-                <br>
-                <input type="submit" value="Se connecter">
-                <br>
-                <br>
-                <a href="/forgotpass.html">Mot de passe oublié ?</a>
-                <br>
-                <a href="/singup.html">Créer nouveau compte</a>
+                <input class="submit" type="submit" value="Se connecter">
+                <hr>
+                <a href="./forgotpass.html">Mot de passe oublié ?</a>
+                <a href="./signup.html">Créer nouveau compte</a>
             </fieldset>
         </form>
-    </div>
-    <br>
+    </main>
     <footer>
-        <span><a href="mailto:test@gmail.com">Contact Us</a></span>
+        <span><a href="mailto:studentlib@gmail.com" style="color: white;">Contacter Nous</a></span>
         <br>
         <span>©2025, Tous droits réservés.</span>
     </footer>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

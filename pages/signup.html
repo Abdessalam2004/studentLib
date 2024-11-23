@@ -3,44 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>example de 'page du cours'</title>
 </head>
 <body>
     <header>
         <div id="logo">
-            <a href="../index.html"><img src="../images/logo.png" alt="StudentLib_logo"></a>
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="StudentLib_logo">
+            </a>
         </div>
         <nav>
-            <ul>
-                <li>
-                    <a href="cours.html">Cours</a>
-                    <ul>
-                        <li>CP</li>
-                        <li>CI</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="TD.html">TD</a>
-                    <ul>
-                        <li>CP</li>
-                        <li>CI</li>
-                    </ul>
-                </li>
-                <li><a href="extra.html">Extra</a></li>
-                <li><a href="signup.html">S'inscrire</a></li>
-                <li><a href="login.html">Se connecter</a></li>
-            </ul>
+            <!-- Cours Dropdown -->
+            <li class="option">
+                <div class="CoursSelector">Cours<img src="../images/down-arrow.png" width="20px" style="position: absolute;right: 0;"></div>
+                <ul class="listCours">
+                    <li><a href="cours.html">CP</a></li>
+                    <li><a href="cours.html">CI</a></li>
+                </ul>
+            </li>
+
+            <!-- TD Dropdown -->
+            <li class="option">
+                <div class="TdSelector">TD<img src="../images/down-arrow.png" width="20px" style="position: absolute;right: 0;"></div>
+                <ul class="listTd">
+                    <li><a href="TD.html">CP</a></li>
+                    <li><a href="TD.html">CI</a></li>
+                </ul>
+            </li>
+
+            <!-- Other Navigation Links -->
+            <li class="option"><a href="extra.html">Extra</a></li>
+            <li class="option"><a href="signup.html">S'inscrire</a></li>
+            <li class="option"><a href="login.html">Se connecter</a></li>
+
         </nav>
     </header>
     
-    <section>
-        <br>
+    <main>
         <form method="post">
             <fieldset>
                 <legend>S'inscrire</legend>
-                <input type="text" name="Nom" placeholder="Nom" required><br><br>
-                <input type="text" name="Prenom" placeholder="Prénom"><br><br>
-                <label for='select_year'>Niveau scolaire:</label><br><br>
+                Nom
+                <input type="text" name="Nom" placeholder="Nom" required>
+                Prénom
+                <input type="text" name="Prenom" placeholder="Prénom">
+                <label for='select_year'>Niveau scolaire:</label>
                 <select name="select_year" >
                     <optgroup label="CP">
                         <option value="CP1">CP1</option>
@@ -53,21 +61,23 @@
                         <option value="autre">Autre</option>
                     </optgroup>
                 </select>
-                <br><br>
-                <input type="email" name="Email" placeholder="Email" required><br><br>
-                <input type="password" name="motDePasse" placeholder="Mot de passe" required><br><br>
-                <input type="password" name="confirmMotDePasse" placeholder="Confirmer le mot de passe" required><br><br>
-                <input type="submit" name="submit_button" value="S'inscrire"/>
+                Email
+                <input type="email" name="Email" placeholder="example@gmail.com" required>
+                Mot de passe
+                <input type="password" name="motDePasse" placeholder="123456789" required>
+                Confirmer le mot de passe
+                <input type="password" name="confirmMotDePasse" placeholder="123456789" required>
+                <br>
+                <input type="submit" class="submit" name="submit_button" value="S'inscrire"/>
             </fieldset>
         </form>
-        <br>
-    </section>
+    </main>
 
     <footer>
-        <span><a href="mailto:test@gmail.com">Contact Us</a></span>
+        <span><a href="mailto:studentlib@gmail.com" style="color: white;">Contacter Nous</a></span>
         <br>
         <span>©2025, Tous droits réservés.</span>
     </footer>
-    
+    <script src="../scripts/main.js"></script>
 </body> 
 </html>
