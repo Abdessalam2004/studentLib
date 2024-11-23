@@ -21,6 +21,12 @@ body {
     margin-left: 10px;
     border-radius: 15px;
     box-shadow: 0 0px 10px 1px black;
+    transition: scale 0.3s ease-in-out;
+}
+
+#logo img:hover{
+    transition: scale 0.3s ease-in-out;
+    scale: 1.2;
 }
 
 header {
@@ -52,7 +58,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #dddd;
+    background-color: var(--Mcolor);
 }
 
 .listCours,.listTd{
@@ -60,18 +66,21 @@ nav{
     position: absolute;
     width: 101%;
     top: 100%;
-    background-color: #dddd;
+    background-color: var(--Scolor);
     border: 1px solid black;
     z-index: 2;
 }
 
 .listCours a,.listTd a{
     padding: 10px;
+    background-color: var(--Scolor);
     margin: 5px 0;
+    transition: background-color 0.3s ease-out;
 }
 .option a{
     width: 100%;
     height: 100%;
+    cursor: pointer;
     text-decoration: none;
     color: white;
     display: flex;
@@ -79,6 +88,7 @@ nav{
     justify-content: center;
 }
 .listCours a:hover,.listTd a:hover{
+    transition: background-color 0.3s ease-out;
     background-color: #AAA;
 }
 
@@ -129,6 +139,7 @@ main input,main select{
 .submit,button{
     background-color: var(--Pcolor);
     color: white;
+    transition: background-color 0.3s ease-out;
 }
 .submit:hover,button:hover{
     transition: background-color 0.2s ease-out;
