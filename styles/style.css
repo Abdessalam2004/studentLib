@@ -4,9 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Consolas, sans-serif;
-    --Pcolor:rgb(50, 50, 250);
-    --Mcolor:rgb(0, 0, 200);
-    --Scolor:rgb(155, 155, 255);
+    --Pcolor:rgb(50, 100, 100);
+    --Mcolor:rgb(0, 100, 100);
+    --Scolor:rgb(155, 255, 255);
+    list-style: none;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
 
 #logo img:hover{
     transition: scale 0.3s ease-in-out;
-    scale: 1.2;
+    scale: 1.1;
 }
 
 header {
@@ -74,7 +75,7 @@ nav{
     top: 100%;
     background-color: var(--Pcolor);
     border: 1px solid black;
-    z-index: 2;
+    z-index: 100;
 }
 
 .listCours a,.listTd a{
@@ -100,6 +101,7 @@ nav{
 
 li,ul{
     list-style-type: none;
+    padding-left: 0;
 }
 
 
@@ -124,7 +126,9 @@ main{
     color: var(--Mcolor);
     font-size: 1.3rem;
 }
-
+main span{
+    padding: 20px;
+}
 main section{
     text-align: center;
 }
@@ -132,6 +136,7 @@ main section{
 main fieldset{
     padding: 30px;
     margin: 30px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -165,4 +170,34 @@ footer {
     padding: 10px 0;
     width: 100%;
     margin-top: auto;
+}
+
+.mainSection{
+    font-size: 1.3rem;
+}
+
+.accordion-button{
+    font-size: 1.5rem;
+}
+
+.accordion-body ul{
+    display: flex ;
+    flex-direction: row ;
+    gap: 20px;
+}
+.accordion-body ul li{
+    width: 25%;
+    height: 25%;
+    background-color: rgb(220, 220, 220);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.accordion-body ul li a{
+    color: black;
+}
+
+.accordion-body ul li .desc{
+    color: rgb(70, 70, 70);
+    font-size: 1.2rem;
 }

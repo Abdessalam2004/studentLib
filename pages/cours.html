@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (optional for interactive components like accordion) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    
     <link rel="stylesheet" href="../styles/style.css">
     <title>Cours</title>
 </head>
@@ -40,37 +45,118 @@
 
         </nav>
     </header>
-    <main>
-        <h3>Mathématiques</h3>
-        <section>
-            <ul>
-                <li><a href="example.html">cours1: Proba</a></li>
-                <li>CH 2</li>
-                <li>CH 3</li>
-                <li>CH 4</li>
-            </ul>
-        </section>
     
-        <h3>Physique</h3>
-        <section>
-            <ul>
-                <li>CH 1</li>
-                <li>CH 2</li>
-                <li>CH 3</li>
-                <li>CH 4</li>
-            </ul>
-        </section>
+    <div class="mainSection">
+        <div class="accordion" id="accordionExample2">
     
-        <h3>Informatique</h3>
-        <section>
-            <ul>
-                <li>CH 1</li>
-                <li>CH 2</li>
-                <li>CH 3</li>
-                <li>CH 4</li>
-            </ul>
-        </section>
-    </main>
+            <!-- Mathématiques Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingMath">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMath" aria-expanded="true" aria-controls="collapseMath">
+                        Mathématiques
+                    </button>
+                </h2>
+                <div id="collapseMath" class="accordion-collapse collapse show" aria-labelledby="headingMath" data-bs-parent="#accordionExample2">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="example.html">Cours 1 : Proba</a>
+                                <div class="desc">
+                                    Introduction aux concepts de probabilité, exemples et applications.
+                                </div>
+                            </li>
+                            <li>CH 2
+                                <div class="desc">
+                                    Explication détaillée des sujets de calcul.
+                                </div>
+                            </li>
+                            <li>CH 3
+                                <div class="desc">
+                                    Concepts fondamentaux et avancés d'algèbre linéaire.
+                                </div>
+                            </li>
+                            <li>CH 4
+                                <div class="desc">
+                                    Sujets avancés en mathématiques avec exercices.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Physique Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPhysique2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhysique2" aria-expanded="false" aria-controls="collapsePhysique2">
+                        Physique
+                    </button>
+                </h2>
+                <div id="collapsePhysique2" class="accordion-collapse collapse" aria-labelledby="headingPhysique2" data-bs-parent="#accordionExample2">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>CH 1
+                                <div class="desc">
+                                    Fondamentaux de la mécanique et leurs applications.
+                                </div>
+                            </li>
+                            <li>CH 2
+                                <div class="desc">
+                                    Principes et équations de la thermodynamique.
+                                </div>
+                            </li>
+                            <li>CH 3
+                                <div class="desc">
+                                    Bases de l'électromagnétisme avec exercices.
+                                </div>
+                            </li>
+                            <li>CH 4
+                                <div class="desc">
+                                    Concepts modernes de physique expliqués.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Informatique Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingInformatique2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInformatique2" aria-expanded="false" aria-controls="collapseInformatique2">
+                        Informatique
+                    </button>
+                </h2>
+                <div id="collapseInformatique2" class="accordion-collapse collapse" aria-labelledby="headingInformatique2" data-bs-parent="#accordionExample2">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>CH 1
+                                <div class="desc">
+                                    Bases des langages de programmation et concepts.
+                                </div>
+                            </li>
+                            <li>CH 2
+                                <div class="desc">
+                                    Introduction aux structures de données avec exemples pratiques.
+                                </div>
+                            </li>
+                            <li>CH 3
+                                <div class="desc">
+                                    Algorithmes et techniques d'optimisation.
+                                </div>
+                            </li>
+                            <li>CH 4
+                                <div class="desc">
+                                    Sujets avancés en informatique.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
 
     <footer>
         <span><a href="mailto:studentlib@gmail.com" style="color: white;">Contacter Nous</a></span>

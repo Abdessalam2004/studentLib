@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (optional for interactive components like accordion) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <title>Cours</title>
 </head>
@@ -41,27 +45,81 @@
         </nav>
     </header>
     
-    <main>
-        <h3>Resumés:</h3>
-        <section>
-            <ul>
-                <li>Résumé 1</li>
-                <li>Résumé 2</li>
-                <li>Résumé 3</li>
-                <li>Résumé 4</li>
-            </ul>
-        </section>
-
-        <h3>Pour s'approfondir:</h3>
-        <section>
-            <ul>
-                <li>Livre 1</li>
-                <li>Livre 2</li>
-                <li>Livre 3</li>
-                <li>Livre 4</li>
-            </ul>
-        </section>
-    </main>
+    <div class="mainSection">
+        <div class="accordion" id="accordionExample">
+            
+            <!-- Resumés Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Resumés:
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">Résumé 1</a>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus laudantium commodi architecto aspernatur fuga? Quasi aut eos blanditiis nobis! Molestias sunt, porro perspiciatis vero voluptatibus repudiandae. Modi natus, libero non excepturi aliquid dolor expedita, fugiat ullam quos amet dolores, perspiciatis omnis eaque? Tenetur dolorem esse dolore, debitis in vel.
+                                </div>
+                            </li>
+                            <li><a href="#">Résumé 2</a>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus laudantium commodi architecto aspernatur fuga? Quasi aut eos blanditiis nobis! Molestias sunt, porro perspiciatis vero voluptatibus repudiandae. Modi natus, libero non excepturi aliquid dolor expedita, fugiat ullam quos amet dolores, perspiciatis omnis eaque? Tenetur dolorem esse dolore, debitis in vel.
+                                </div>
+                            </li>
+                            <li><a href="#">Résumé 3</a>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus laudantium commodi architecto aspernatur fuga? Quasi aut eos blanditiis nobis! Molestias sunt, porro perspiciatis vero voluptatibus repudiandae. Modi natus, libero non excepturi aliquid dolor expedita, fugiat ullam quos amet dolores, perspiciatis omnis eaque? Tenetur dolorem esse dolore, debitis in vel.
+                                </div>
+                            </li>
+                            <li><a href="#">Résumé 4</a>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus laudantium commodi architecto aspernatur fuga? Quasi aut eos blanditiis nobis! Molestias sunt, porro perspiciatis vero voluptatibus repudiandae. Modi natus, libero non excepturi aliquid dolor expedita, fugiat ullam quos amet dolores, perspiciatis omnis eaque? Tenetur dolorem esse dolore, debitis in vel.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Pour s'approfondir Section -->
+            <div class="accordion-item">
+                <div class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Pour s'approfondir:
+                    </button>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">Livre 1</a>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus laudantium commodi architecto aspernatur fuga? Quasi aut eos blanditiis nobis! Molestias sunt, porro perspiciatis vero voluptatibus repudiandae. Modi natus, libero non excepturi aliquid dolor expedita, fugiat ullam quos amet dolores, perspiciatis omnis eaque? Tenetur dolorem esse dolore, debitis in vel.
+                                </div>
+                            </li>
+                            <li><a href="#">Livre 2</a>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus laudantium commodi architecto aspernatur fuga? Quasi aut eos blanditiis nobis! Molestias sunt, porro perspiciatis vero voluptatibus repudiandae. Modi natus, libero non excepturi aliquid dolor expedita, fugiat ullam quos amet dolores, perspiciatis omnis eaque? Tenetur dolorem esse dolore, debitis in vel.
+                                </div>
+                            </li>
+                            <li><a href="#">Livre 3</a>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus laudantium commodi architecto aspernatur fuga? Quasi aut eos blanditiis nobis! Molestias sunt, porro perspiciatis vero voluptatibus repudiandae. Modi natus, libero non excepturi aliquid dolor expedita, fugiat ullam quos amet dolores, perspiciatis omnis eaque? Tenetur dolorem esse dolore, debitis in vel.
+                                </div>
+                            </li>
+                            <li><a href="#">Livre 4</a>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus laudantium commodi architecto aspernatur fuga? Quasi aut eos blanditiis nobis! Molestias sunt, porro perspiciatis vero voluptatibus repudiandae. Modi natus, libero non excepturi aliquid dolor expedita, fugiat ullam quos amet dolores, perspiciatis omnis eaque? Tenetur dolorem esse dolore, debitis in vel.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
 
     <footer>
         <span><a href="mailto:studentlib@gmail.com" style="color: white;">Contacter Nous</a></span>
