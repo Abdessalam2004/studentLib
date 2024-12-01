@@ -8,36 +8,43 @@
     <title>example_du_cours</title>
 </head>
 <body>
-    <header>
+    <div class="background">
+    </div>
+    <header class = "headerStyle">
         <div id="logo">
             <a href="../index.html">
                 <img src="../images/logo.png" alt="StudentLib_logo">
             </a>
         </div>
+        
         <nav>
-            <!-- Cours Dropdown -->
-            <li class="option">
-                <div class="CoursSelector">Cours<img src="../images/down-arrow.png" width="20px" style="position: absolute;right: 0;"></div>
-                <ul class="listCours">
-                    <li><a href="cours.html">CP</a></li>
-                    <li><a href="cours.html">CI</a></li>
-                </ul>
-            </li>
+            <ul class="leftSide">
+                <!-- Cours Dropdown -->
+                <li class="option">
+                    <div class="CoursSelector">Cours<img src="../images/down-arrow.png" width="20px" style="position: relative; top: 1px;left: 2px;"></div>
+                    <ul class="listCours">
+                        <li><a href="cours.html">CP</a></li>
+                        <li><a href="cours.html">CI</a></li>
+                    </ul>
+                </li>
 
-            <!-- TD Dropdown -->
-            <li class="option">
-                <div class="TdSelector">TD<img src="../images/down-arrow.png" width="20px" style="position: absolute;right: 0;"></div>
-                <ul class="listTd">
-                    <li><a href="TD.html">CP</a></li>
-                    <li><a href="TD.html">CI</a></li>
-                </ul>
-            </li>
+                <!-- TD Dropdown -->
+                <li class="option">
+                    <div class="TdSelector">TD<img src="../images/down-arrow.png" width="20px" style="position: relative; top: 1px;left: 5px;"></div>
+                    <ul class="listTd">
+                        <li><a href="TD.html">CP</a></li>
+                        <li><a href="TD.html">CI</a></li>
+                    </ul>
+                </li>
 
-            <!-- Other Navigation Links -->
-            <li class="option"><a href="extra.html">Extra</a></li>
-            <li class="option"><a href="signup.html">S'inscrire</a></li>
-            <li class="option"><a href="login.html">Se connecter</a></li>
-
+                <!-- Other Navigation Links -->
+                <li class="option" ><a href="extra.html" >Extra</a></li>
+            </ul>
+            
+            <ul class="rightSide">
+                <li class="option" style="width: 120px;"><a href="login.html" style="color:#03A6A6;">Se connecter</a></li>
+                <li class="option" style="width: 120px;"><a href="signup.html">S'inscrire</a></li>
+            </ul>
         </nav>
     </header>
     
@@ -51,9 +58,14 @@
     </main>
 
     <footer>
-        <span><a href="mailto:studentlib@gmail.com" style="color: white;">Contacter Nous</a></span>
-        <br>
-        <span>©2025, Tous droits réservés.</span>
+        <ul>
+            <li><a href="#">ABOUT US</a></li>
+            <hr>
+            <li><a href="#">HELP</a></li>
+            <hr>
+            <li><a href="mailto:studentlib@gmail.com" >CONTACT</a></li>
+            <li style="margin-left: auto;">©2025, Tous droits réservés.</li>
+        </ul>
     </footer>
     <script src="../scripts/main.js"></script>
 </body> 

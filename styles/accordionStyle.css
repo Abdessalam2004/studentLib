@@ -1,0 +1,29 @@
+.mainSection{
+    font-size: 1.3rem;
+}
+
+.accordion-button{
+    font-size: 1.5rem;
+}
+
+.accordion-body ul{
+    display: flex ;
+    flex-direction: row ;
+    gap: 20px;
+}
+.accordion-body ul li{
+    width: 25%;
+    height: 25%;
+    background-color: rgb(220, 220, 220);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.accordion-body ul li a{
+    color: black;
+}
+
+.accordion-body ul li .desc{
+    color: rgb(70, 70, 70);
+    font-size: 1.2rem;
+}

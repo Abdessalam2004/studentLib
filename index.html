@@ -8,52 +8,75 @@
     <link rel="stylesheet" href="./styles/style.css"> <!-- Link your CSS file -->
 </head>
 <body>
-    <header>
+    
+    <div class="background">
+        <img src="images/home/backgorund.jpg" alt="Background" />
+    </div>
+    <header class = "headerStyle">
+        
         <div id="logo">
             <a href="index.html">
                 <img src="images/logo.png" alt="StudentLib_logo">
             </a>
         </div>
+        
         <nav>
-            <!-- Cours Dropdown -->
-            <li class="option">
-                <div class="CoursSelector">Cours<img src="./images/down-arrow.png" width="20px" style="position: absolute;right: 5px;"></div>
-                <ul class="listCours">
-                    <li><a href="pages/cours.html">CP</a></li>
-                    <li><a href="pages/cours.html">CI</a></li>
-                </ul>
-            </li>
+            <ul class="leftSide">
+                <!-- Cours Dropdown -->
+                <li class="option">
+                    <div class="CoursSelector">Cours<img src="./images/down-arrow.png" width="20px" style="position: relative; top: 1px;left: 2px;"></div>
+                    <ul class="listCours">
+                        <li><a href="pages/cours.html">CP</a></li>
+                        <li><a href="pages/cours.html">CI</a></li>
+                    </ul>
+                </li>
 
-            <!-- TD Dropdown -->
-            <li class="option">
-                <div class="TdSelector">TD<img src="./images/down-arrow.png" width="20px" style="position: absolute;right: 5px;"></div>
-                <ul class="listTd">
-                    <li><a href="pages/TD.html">CP</a></li>
-                    <li><a href="pages/TD.html">CI</a></li>
-                </ul>
-            </li>
+                <!-- TD Dropdown -->
+                <li class="option">
+                    <div class="TdSelector">TD<img src="./images/down-arrow.png" width="20px" style="position: relative; top: 1px;left: 5px;"></div>
+                    <ul class="listTd">
+                        <li><a href="pages/TD.html">CP</a></li>
+                        <li><a href="pages/TD.html">CI</a></li>
+                    </ul>
+                </li>
 
-            <!-- Other Navigation Links -->
-            <li class="option"><a href="pages/extra.html">Extra</a></li>
-            <li class="option"><a href="pages/signup.html">S'inscrire</a></li>
-            <li class="option"><a href="pages/login.html">Se connecter</a></li>
-
+                <!-- Other Navigation Links -->
+                <li class="option"><a href="pages/extra.html">Extra</a></li>
+            </ul>
+            
+            <ul class="rightSide">
+                <li class="option" style="width: 120px;"><a href="pages/login.html" id="loginStyle">Se connecter</a></li>
+                <li class="option" style="width: 120px;"><a href="pages/signup.html" >S'inscrire</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- Placeholder Content -->
     <main>
+        <div class="welcomeText">Bienvenue sur <span style="color: #03A6A6; font-size: 70px; background-color: rgba(255, 255, 255);">StudentLib</span> </div>
         <div class="searchBar">
+            <button class="uploadButton" >
+                <img src="https://img.icons8.com/pastel-glyph/100/upload--v1.png" alt="upload--v1"/>
+            </button>
+
             <input type="text" placeholder="Search...">
-            <button>Search</button>
+
+            <button class="searchButton">
+                <img width="45" height="45" src="https://img.icons8.com/ios/100/search--v1.png" alt="search--v1"/>
+            </button>
         </div>
-        <div>Bienvenue sur StudentLib ! Sélectionnez une option dans le menu ci-dessus.</div>
     </main>
+
     <!-- Footer -->
     <footer>
-        <span><a href="mailto:studentlib@gmail.com" style="color: white;">Contacter Nous</a></span>
-        <br>
-        <span>©2025, Tous droits réservés.</span>
+        <ul>
+            <li><a href="#">ABOUT US</a></li>
+            <hr>
+            <li><a href="#">HELP</a></li>
+            <hr>
+            <li><a href="mailto:studentlib@gmail.com" >CONTACT</a></li>
+            <li style="margin-left: auto;">©2025, Tous droits réservés.</li>
+        </ul>
     </footer>
     <script src="./scripts/main.js"></script>
 </body>
