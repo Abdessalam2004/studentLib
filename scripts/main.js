@@ -50,3 +50,13 @@ singupForm.onsubmit = function (event){
     else
         alert("Le mot de passe n'est pas le meme ");
 };
+
+
+function changefavori(){ 
+    if (document.getElementById("favori").getAttribute('src') == "../images/exmaplePage/yellowStar.png"){
+        document.getElementById("favori").setAttribute('src',"../images/exmaplePage/yellowStar_filled.png");
+    }
+    else{
+        document.getElementById("favori").setAttribute('src',"../images/exmaplePage/yellowStar.png");
+    }   
+}

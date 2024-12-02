@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/showPageStyle.css">
     <link rel="icon" href="../images/logo.png">
     <title>example_du_cours</title>
 </head>
@@ -42,31 +43,42 @@
             </ul>
             
             <ul class="rightSide">
-                <li class="option" style="width: 120px;"><a href="login.html" style="color:#03A6A6;">Se connecter</a></li>
+                <li class="option" style="width: 120px;"><a href="login.html"  id="loginStyle">Se connecter</a></li>
                 <li class="option" style="width: 120px;"><a href="signup.html">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
-        <span><a href="#">mettez le document à vos favoris</a></span>
-        <section>
-            <embed src="../cours/proba_cours.pdf" type="application/pdf" width=900px height="600px" >        
-        </section>
-        <span>Ecrit par: l'auteur</span>
-        <span><a href='../cours/proba_cours.pdf' download>Télécharger</a></span>
-    </main>
+    <div class="mainContent">
+        <div class="infoBar"><a href="cours.html">Cours</a> / <a href="cours.html">CP</a> / <a href="cours.html">Mathématiques</a> / <span style="color:#03A6A6">Cours de probabilités </span></div>
+        <div class="options">
+            <img src="../images/exmaplePage/yellowStar.png" alt="favoris" id="favori" onclick="changefavori()" >
+            <a href="../cours/proba_cours.pdf" download><img src="../images/exmaplePage/download.png" alt="download" ></a>
+        </div>
+        <div  class="reader">
+            <iframe
+                src="../cours/proba_cours.pdf"
+                frameBorder="0"
+                scrolling="auto"
+                height="100%"
+                width="100%"
+            ></iframe>
+        </div>
+        <div class="infoBar">Publié par : <span style="color:#03A6A6">Pr. ALAMI </span>le 30 Nov 2024</div>
+    </div>
 
     <footer>
         <ul>
-            <li><a href="#">ABOUT US</a></li>
+            <li><a href="../index.html">HOME</a></li>
             <hr>
-            <li><a href="#">HELP</a></li>
+            <li><a href="#">ABOUT US</a></li>
             <hr>
             <li><a href="mailto:studentlib@gmail.com" >CONTACT</a></li>
             <li style="margin-left: auto;">©2025, Tous droits réservés.</li>
         </ul>
     </footer>
-    <script src="../scripts/main.js"></script>
+    <script src="../scripts/main.js">
+        
+    </script>
 </body> 
 </html>
