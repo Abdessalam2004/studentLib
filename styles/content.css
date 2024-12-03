@@ -1,0 +1,29 @@
+.navs{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.o{
+    border: 1px solid black;
+    padding: 20px;
+    width: 100%;
+}
+.o a{
+    width: 100%;
+}
+.holder{
+    gap: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.name{
+    position: absolute;
+    right: 0;
+    background-color: #03FAAF;
+    padding: 15px;
+    box-shadow: 0px 2px 5px 2px black;
+}
+.content{
+    font-size: 1.3rem;
+}

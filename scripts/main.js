@@ -7,9 +7,7 @@ const tdSelector = document.querySelector('.TdSelector');
 const singupForm = document.getElementById('singupForm');
 
 let Users = localStorage.getItem("Users");
-if (!Users) {
-    Users = {};
-} else {
+if (Users != null){
     Users = JSON.parse(Users);
 }
 
@@ -38,7 +36,9 @@ singupForm.onsubmit = function (event){
     Password = form.get('Password');
     Confirm = form.get('Confirm');
     if(Password === Confirm){
-        Users[Email] = {
+        Users = {};
+        Users['0'] = {
+            'Email':Email,
             'Name':Name,
             'FamilyName':FamilyName,
             'Password':Password
@@ -48,7 +48,7 @@ singupForm.onsubmit = function (event){
         location.href = 'login.html';
     }
     else
-        alert("Veuillez entrer le même mot de passe");
+        alert("Veuillez confirmer le même mot de passe");
 };
 
 

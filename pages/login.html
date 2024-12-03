@@ -81,15 +81,14 @@
     <script>
         document.getElementById("loginForm").addEventListener('submit', (event)=> {
             event.preventDefault();
-            location.href = 'extra.html';
 
             const Email = document.getElementById("email").value;
             const Password = document.getElementById("password").value;
 
             let Users = localStorage.getItem("Users");
-            Users = Users ? JSON.parse(Users) : {};
-            if (Users[Email]) { 
-                if (Users[Email].Password === Password) {
+            Users = Users != null? JSON.parse(Users) : null;
+            if (Users['0'].Email) { 
+                if (Users['0'].Password === Password) {
                     alert("Connexion réussie !");
                     location.href = 'content.html'; 
                 } else {

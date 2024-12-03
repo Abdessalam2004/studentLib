@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/logo.png">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/content.css">
     <title>Bienvenue dans votre compte</title>
 </head>
 <body>
@@ -47,19 +48,128 @@
             </ul>
         </nav>
     </header>
+    <style>
+        .holder {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .holder li,.holder ul{
+        list-style: decimal;
+        list-style-type: ">>  ";
+        margin-left: 20px;
+    }
     
-    <main>
-        <div>
+        .navs {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5rem;
+            width: 25%;
+        }
+    
+        .o {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 10px;
+            width: 100%;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+    
+        .o:hover {
+            background-color: #e9ecef;
+        }
+    
+        .o a {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            color: #495057;
+            font-weight: 500;
+        }
+    
+        .o a:hover {
+            color: #007bff;
+        }
+    
+        .content {
+            font-size: 1.3rem;
+            width: 70%;
+        }
+    
+        .name {
+            background-color: #03FAAF;
+            padding: 15px;
+            box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            position: relative;
+            font-weight: bold;
+        }
+    
+        .other {
+            margin-top: 20px;
+        }
+    
+        .other ul {
+            list-style: none;
+            padding-left: 0;
+        }
+    
+        .other li {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+    
+        .other a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    
+        .other a:hover {
+            text-decoration: underline;
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .holder {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+    
+            .navs {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+    
+            .content {
+                width: 100%;
+            }
+        }
+    </style>
+    
+    <div class="holder">
+        <div class="navs">
             <div class="o"><a href="">Favoris</a></div>
             <div class="o"><a href="">Cours</a></div>
             <div class="o"><a href="">Td</a></div>
-            <div class="o"><a href="">Mes uploads</a></div>
-            <div class="o"><a href="">Paramétre</a></div>
+            <div class="o"><a href="">uploads</a></div>
+            <div class="o"><a href="">Paramétres</a></div>
         </div>
-        <div>
-            Contenu
+        <div class="content">
+            <div class="name" id="name">Bonjour </div>
+            <div class="other">
+                <ul>Favoris
+                    <li><a href="#">Livre 1</a></li>
+                    <li><a href="#">Livre 2</a></li>
+                    <li><a href="#">Cours 1</a></li>
+                </ul>
+            </div>
         </div>
-    </main>
+    </div>
+    
+
     
     <footer>
         <ul>
@@ -71,6 +181,12 @@
             <li style="margin-left: auto;">©2025, Tous droits réservés.</li>
         </ul>
     </footer>
+    <script>
+        let Users = localStorage.getItem("Users");
+        Users = JSON.parse(Users);
+        document.getElementById('name').textContent = "Bienvenue "+Users["0"].Name+"-"+Users["0"].FamilyName;
+    </script>
     <script src="../scripts/main.js"></script>
 </body>
+
 </html>
