@@ -1,0 +1,35 @@
+main fieldset{
+    padding: 30px;
+    margin: 30px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #03A6A6;
+}
+
+main input,main select{
+    padding: 5px 10px;
+    font-size: 1.1rem;
+}
+
+main fieldset legend{
+    color: #03A6A6;
+}
+
+.submit,button{
+    background-color: var(--Pcolor);
+    color: white;
+    transition: background-color 0.3s ease-out;
+    border: 0;
+    border-radius: 20px;
+    width: 80%;
+    align-self: center;
+    margin: 18px 0 10px;
+}
+.submit:hover,button:hover{
+    transition: background-color 0.3s ease-out;
+    background-color: #03A6A6;
+    color: black;
+}

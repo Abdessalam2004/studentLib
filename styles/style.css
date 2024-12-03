@@ -123,6 +123,7 @@ nav{
 
 #loginStyle{
     color: #03A6A6;
+    font-weight:500;
 }
 #loginStyle:hover{
     color: white;
@@ -172,24 +173,9 @@ main{
 /*main span{
     padding: 20px;
 }*/
-main section{
+/* main section{
     text-align: center;
-}
-
-main fieldset{
-    padding: 30px;
-    margin: 30px;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 10px;
-}
-
-main input,main select{
-    padding: 5px 10px;
-    font-size: 1.1rem;
-}
+} */
 
 /* Home page text */
 .welcomeText{
@@ -260,8 +246,6 @@ main input,main select{
     transition: scale 0.3s ease-in-out;
     scale: 1.1;
 }
-
-
 
 /* footer */
 footer {
