@@ -86,7 +86,7 @@
             const Password = document.getElementById("password").value;
 
             let Users = localStorage.getItem("Users");
-            Users = Users != null? JSON.parse(Users) : null;
+            Users = JSON.parse(Users);
             if (Users['0'].Email) { 
                 if (Users['0'].Password === Password) {
                     alert("Connexion réussie !");
