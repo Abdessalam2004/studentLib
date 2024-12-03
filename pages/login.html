@@ -87,7 +87,7 @@
 
             let Users = localStorage.getItem("Users");
             Users = JSON.parse(Users);
-            if (Users['0'].Email) { 
+            if (typeof Users['0'].Email != null) { 
                 if (Users['0'].Password === Password) {
                     alert("Connexion réussie !");
                     location.href = 'content.html'; 
