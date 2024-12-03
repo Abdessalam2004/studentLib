@@ -48,7 +48,7 @@ singupForm.onsubmit = function (event){
         location.href = 'login.html';
     }
     else
-        alert("Le mot de passe n'est pas le meme ");
+        alert("Veuillez entrer le même mot de passe");
 };
 
 

@@ -5,6 +5,7 @@ main fieldset{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     border: 1px solid #03A6A6;
 }
@@ -14,8 +15,14 @@ main input,main select{
     font-size: 1.1rem;
 }
 
+main input{
+    border: none;
+    border-radius: 5px;
+}
+
 main fieldset legend{
     color: #03A6A6;
+    padding: 0 2px;
 }
 
 .submit,button{
